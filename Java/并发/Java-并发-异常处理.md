@@ -161,6 +161,6 @@ public static void setDefaultUncaughtExceptionHandler(UncaughtExceptionHandler e
 
 ##### 4.总结：<br/>
 
-> &emsp;线程通过寻找异常处理器决定使用那个异常处理器来回调线程中抛出的异常，寻找的优先级为：专有异常处理>线程组专有uncaughtException>默认异常处理器。我们通过编写自己的handler设置线程的异常处理器总而捕获线程中抛出的异常。
+> &emsp;通过寻找异常处理器决定使用那个异常处理器来回调线程中抛出的异常，寻找的优先级为：专有异常处理>线程组专有uncaughtException>默认异常处理器。我们通过编写自己的handler设置线程的异常处理器总而捕获线程中抛出的异常。
 
 完
